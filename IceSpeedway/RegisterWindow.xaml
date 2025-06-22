@@ -1,0 +1,25 @@
+﻿<Window x:Class="IceSpeedway.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IceSpeedway"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Height="600" Width="800" MinWidth="800" MinHeight="600">
+    <Grid Width="800" Height="600">
+        <Image HorizontalAlignment="Center" Height="100" Margin="0,20,0,0" VerticalAlignment="Top" Source="/logo.jpg"/>
+        <Label Content="Регистрация" HorizontalAlignment="Center" Margin="0,130,0,0" VerticalAlignment="Top" FontSize="28"/>
+        <Label Content="Ваша почта" Margin="258,218,242,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="textBox1" Margin="262,253,238,0" Height="30" FontSize="14" VerticalAlignment="Top" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged1"/>
+        <TextBlock x:Name="watermark1" Text="Введите почту" Margin="264,255,238,0" Height="25" VerticalAlignment="Top" Foreground="Gray" IsHitTestVisible="False"/>
+        <Label Content="Пароль" Margin="258,294,242,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="textBox2" Margin="262,328,238,0" Height="30" FontSize="14" VerticalAlignment="Top" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged2"/>
+        <TextBlock x:Name="watermark2" Text="Введите пароль" Margin="264,330,238,0" Height="25" VerticalAlignment="Top" Foreground="Gray" IsHitTestVisible="False"/>
+        <Label Content="Повторите пароль" Margin="258,368,242,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="textBox3" Margin="262,403,238,0" Height="30" FontSize="14" VerticalAlignment="Top" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged3"/>
+        <TextBlock x:Name="watermark3" Text="Повторите пароль" Margin="264,405,238,0" Height="25" VerticalAlignment="Top" Foreground="Gray" IsHitTestVisible="False"/>
+        <Button Margin="262,468,438,0" VerticalAlignment="Top" Background="#3399FF" BorderBrush="#3399FF" Foreground="White" Content="Назад" Height="40" FontSize="18" Click="Button_Click"/>
+        <Button Margin="390,468,238,0" VerticalAlignment="Top" Background="#3399FF" BorderBrush="#3399FF" Foreground="White" Content="Зарегистрироваться" Height="40" FontSize="18" Click="Button_Click_1"/>
+    </Grid>
+</Window>
+
